@@ -9,3 +9,58 @@ body {
     height: 100%;
 }
 
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-bar {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    background: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px #7b7b7b70;
+}
+
+.menu-bar li {
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    border-right: 1px solid #dedede;
+}
+
+.menu-bar li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+.menu-bar li:is(:hover, .active) a {
+    color: #78cc6d;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.nav-link i {
+    font-size: 1.5rem;
+}
+.nav-link * {
+    display: block;
+    text-align: center;
+    transition: all .3s;
+}
