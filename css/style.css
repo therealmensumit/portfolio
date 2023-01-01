@@ -27,7 +27,7 @@ a {
 
 .menu-bar {
     position: absolute;
-    bottom: 10%;
+    bottom: 6%;
     right: 50%;
     transform: translateX(50%);
     background: #fff;
