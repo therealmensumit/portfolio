@@ -41,7 +41,7 @@ a {
     margin-right: 1.5rem;
     padding-right: 1.5rem;
     border-right: 1px solid;
-    border-image: radial-gradient(ellipse at right,#dedede 0,#fff 70%);
+    border-image: radial-gradient(ellipse at right, #dedede 0, #fff 70%);
     border-image-slice: 1;
 }
 
@@ -50,19 +50,63 @@ a {
     padding-right: 0;
     border-right: 0;
 }
+
 .menu-bar li:is(:hover, .active) a {
     color: #78cc6d;
 }
+
 .nav-link {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 0.8rem;
 }
+
 .nav-link i {
     font-size: 1.5rem;
 }
+
 .nav-link * {
     display: block;
     text-align: center;
     transition: all .3s;
+}
+
+.profile {
+    background: #f5f5f5;
+    padding-block-end: 1rem;
+    border-radius: 12px;
+    box-shadow: -28px -28px 0px #1987543d;
+}
+
+.profile figure {
+    background-color: #78cc6d24;
+    padding-block-start: 2rem;
+    clip-path: polygon(100% 0, 100% 65%, 50% 90%, 0 65%, 0 0);
+}
+
+.profile figure img {
+    width: 280px;
+    border-radius: 50%;
+}
+
+.about-me h3 {
+    color: #78cc6d;
+}
+
+.typed-cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
