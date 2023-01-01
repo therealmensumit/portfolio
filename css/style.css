@@ -40,7 +40,9 @@ a {
     display: inline-block;
     margin-right: 1.5rem;
     padding-right: 1.5rem;
-    border-right: 1px solid #dedede;
+    border-right: 1px solid;
+    border-image: radial-gradient(ellipse at right,#dedede 0,#fff 70%);
+    border-image-slice: 1;
 }
 
 .menu-bar li:last-child {
