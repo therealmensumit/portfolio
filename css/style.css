@@ -23,6 +23,11 @@ img {
 a {
     text-decoration: none;
     color: #333;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #78cc6d;
 }
 
 .menu-bar {
@@ -34,6 +39,12 @@ a {
     padding: 0.5rem 2rem;
     border-radius: 4px;
     box-shadow: 0 2px 12px #7b7b7b70;
+    opacity: .7;
+    transition: all .3s;
+}
+
+.menu-bar:hover {
+    opacity: 1;
 }
 
 .menu-bar li {
@@ -51,8 +62,15 @@ a {
     border-right: 0;
 }
 
-.menu-bar li:is(:hover, .active) a {
+.menu-bar.nav-pills li .nav-link {
+    color: #000;
+    padding: 0;
+    outline: 0;
+}
+
+.menu-bar.nav-pills li .nav-link:is(:hover, .active) {
     color: #78cc6d;
+    background: transparent;
 }
 
 .nav-link {
@@ -68,7 +86,6 @@ a {
 .nav-link * {
     display: block;
     text-align: center;
-    transition: all .3s;
 }
 
 .profile {
@@ -82,6 +99,7 @@ a {
     background-color: #78cc6d24;
     padding-block-start: 2rem;
     clip-path: polygon(100% 0, 100% 65%, 50% 90%, 0 65%, 0 0);
+    margin-bottom: 0;
 }
 
 .profile figure img {
@@ -95,6 +113,42 @@ a {
 
 .typed-cursor {
     animation: blink 0.7s infinite;
+}
+
+
+.social-icons a {
+    display: inline-block;
+    margin-inline-end: 1rem;
+}
+
+.social-icons a:last-child {
+    margin-inline-end: 0;
+}
+
+.social-icons a i {
+    font-size: 1.1rem;
+}
+
+.bg-white.my-3.p-3 {
+    min-height: 93%;
+    border-radius: 0 4px 4px 0;
+    overflow-y: auto;
+}
+
+.download-cv {
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+    padding-block-start: 0.6rem;
+}
+.download-cv::before {
+    position: absolute;
+    content: '';
+    background: radial-gradient(ellipse at center,#ddd 0,rgba(255,255,255,0) 70%);
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 @keyframes blink {
