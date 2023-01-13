@@ -1,3 +1,12 @@
+var setElementHeight = function () {
+    var height = $(window).height();
+    $('.main-height').css('height', (height));
+};
+
+$(window).on("resize", function () {
+    setElementHeight();
+}).resize();
+
 $(function(){
 	$(".typed").typed({
 		strings: ["Web Designer", "Web Developer", "Full Stack Developer", "UI/UX Designer"],
