@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:focus-visible{
+    outline: 0;
 }
 
 html,
@@ -107,8 +114,14 @@ a:hover {
     border-radius: 50%;
 }
 
+.about-me h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
 .about-me h3 {
     color: #78cc6d;
+    font-size: 1.5rem;
 }
 
 .typed-cursor {
@@ -169,6 +182,110 @@ a:hover {
     left: 0;
 }
 
+.title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #323;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.title:first-letter {
+    color: #78cc6d;
+    font-size: 2rem;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    bottom: -7px;
+    left: 0;
+    border-radius: 4px;
+    height: 3px;
+    width: 23px;
+    background: linear-gradient(to right, #78cc6d, #6dc6cc);
+}
+
+.border-line {
+    position: relative;
+}
+
+.border-line::before,
+.border-line::after {
+    position: absolute;
+    content: '';
+    background: radial-gradient(ellipse at top, #ddd 0, rgba(255, 255, 255, 0) 70%);
+    top: 0;
+}
+
+.border-line::before {
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+
+.border-line::after {
+    right: 0;
+    width: 2px;
+    height: 100%;
+}
+
+.border-line:nth-child(even):after {
+    display: none;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info li strong {
+    background: #78cc6d;
+    padding: 0.3rem 0.8rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.box-card i {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #78cc6d;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.box-card i::before {
+    font-size: 1.8rem;
+    line-height: 2.1;
+    color: #fff;
+}
+
+.box-card h4 {
+    font-size: 17px;
+    color: #323232;
+    font-weight: 500;
+}
+
+.client-slider {
+    padding-top: 1rem;
+}
+.client-slider .swiper-slide {
+    background: #00144d;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.client-slider .swiper-slide img{
+    aspect-ratio: 2/1;
+    object-fit: contain;
+}
 
 @keyframes blink {
     0% {

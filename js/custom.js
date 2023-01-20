@@ -21,3 +21,21 @@ $(function(){
         // showCursor: false
 	});
 });
+
+var swiper = new Swiper(".client-slider", {
+	slidesPerView: 3,
+	loop: true,
+	spaceBetween: 20,
+	freeMode: true,
+	speed: 2000,
+	autoplay: {
+	  delay: 0,
+	//   disableOnInteraction: false
+	},
+    roundLengths: true,
+    mousewheel: true,
+	/* pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	}, */
+});
