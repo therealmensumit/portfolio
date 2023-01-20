@@ -9,7 +9,7 @@ $(window).on("resize", function () {
 
 $(function(){
 	$(".typed").typed({
-		strings: ["Web Designer", "Web Developer", "Full Stack Developer", "UI/UX Designer"],
+		strings: ["Web Designer", "UI/UX Designer", "Freelance"],
 		stringsElement: null,
 		typeSpeed: 30,
 		startDelay: 1000,
