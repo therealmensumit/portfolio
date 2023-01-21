@@ -22,6 +22,14 @@ $(function(){
 	});
 });
 
+$(document).ready(function () {
+	$('#darkMode').click(function () {
+		$('body').toggleClass('dark-bg');
+		$(this).find('.bi-sun-fill').toggleClass('d-none');
+		$(this).find('.bi-moon-fill').toggleClass('d-none');
+	});
+});
+
 var swiper = new Swiper(".client-slider", {
 	slidesPerView: 3,
 	loop: true,
