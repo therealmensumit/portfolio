@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:focus-visible{
+:focus-visible {
     outline: 0;
 }
 
@@ -48,6 +48,7 @@ a:hover {
     box-shadow: 0 2px 12px #7b7b7b70;
     opacity: .7;
     transition: all .3s;
+    z-index: 2;
 }
 
 .menu-bar:hover {
@@ -257,15 +258,16 @@ a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    text-align: center;
     background: #78cc6d;
     display: inline-block;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .box-card i::before {
     font-size: 1.8rem;
     line-height: 2.1;
-    color: #fff;
 }
 
 .box-card h4 {
@@ -277,15 +279,39 @@ a:hover {
 .client-slider {
     padding-top: 1rem;
 }
+
 .client-slider .swiper-slide {
     background: #00144d;
     padding: 1rem;
     border-radius: 4px;
 }
-.client-slider .swiper-slide img{
+
+.client-slider .swiper-slide img {
     aspect-ratio: 2/1;
     object-fit: contain;
 }
+
+.box-card .contact-icon i {
+    width: 40px;
+    height: 40px;
+}
+
+.box-card .contact-icon i span {
+    font-size: 1.8rem;
+}
+
+.box-card .contact-icon i::before {
+    font-size: 1.2rem;
+}
+
+.form-control~label {
+    color: #c1c1c1;
+}
+
+.form-control:is(:focus) {
+    box-shadow: none;
+}
+
 
 @keyframes blink {
     0% {
