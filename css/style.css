@@ -422,9 +422,9 @@ a:hover .website-img img {
 }
 
 @media (max-width: 480px) {
-    body.overflow-hidden {
+    /* body.overflow-hidden {
         overflow: auto !important;
-    }
+    } */
 
     .border-line::after {
         width: 0;

@@ -30,6 +30,10 @@ $(document).ready(function () {
 	});
 });
 
+if(screen.width < 480) {
+    $('body').removeClass('overflow-hidden');
+}
+
 var swiper = new Swiper(".client-slider", {
 	slidesPerView: 2,
 	loop: true,
