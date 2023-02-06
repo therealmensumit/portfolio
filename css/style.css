@@ -44,7 +44,7 @@ a:hover {
 
 
 .toggler {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     border-radius: 50%;
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .menu-bar {
-    position: absolute;
+    position: fixed;
     bottom: 6%;
     right: 50%;
     transform: translateX(50%);
@@ -226,7 +226,7 @@ a:hover {
     font-size: 22px;
     color: #323;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: capitalize;
     position: relative;
@@ -351,6 +351,25 @@ a:hover {
     background: transparent;
 }
 
+.my-file {
+    height: 383px;
+}
+
+.website-img {
+    overflow: hidden;
+}
+
+.website-img img {
+    transition: all 3s;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+a:hover .website-img img {
+    object-position: bottom;
+}
+
 .dark-bg .menu-bar.nav-pills li .nav-link,
 .dark-bg .btn.btn-outline-success,
 .dark-bg .title,
@@ -373,6 +392,7 @@ a:hover {
     box-shadow: -28px -28px 0px #373c3a3d;
     color: #fff;
 }
+
 .dark-bg .profile figure {
     background-color: #4c4c4c24;
 }
@@ -390,15 +410,75 @@ a:hover {
 }
 
 @keyframes blink {
-    0% {
+
+    0%,
+    100% {
         opacity: 1;
     }
 
     50% {
         opacity: 0;
     }
+}
 
-    100% {
+@media (max-width: 480px) {
+    body.overflow-hidden {
+        overflow: auto !important;
+    }
+
+    .border-line::after {
+        width: 0;
+    }
+
+    .main-frame {
+        padding-bottom: 5rem !important;
+    }
+
+    .menu-bar {
+        padding: 1rem;
+        width: 100%;
+        justify-content: space-between;
         opacity: 1;
+        bottom: 0;
+    }
+
+    .menu-bar li {
+        border: 0;
+        padding-right: 0;
+        margin-right: 1rem;
+    }
+
+    .float-start.w-50 {
+        width: 100% !important;
+    }
+
+    .about-me h1 {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .left-side {
+        height: auto;
+    }
+
+    .toggler {
+        bottom: unset;
+        left: unset;
+        right: 20px;
+        top: 20px;
+        box-shadow: 0 2px 4px #ccc;
+    }
+
+    .nav-link i {
+        font-size: 1.2rem;
+    }
+
+    .nav-link span {
+        font-size: .7rem;
+        font-weight: 400;
+    }
+
+    .my-file {
+        height: 310px;
     }
 }

@@ -1,5 +1,5 @@
-var setElementHeight = function () {
-    var height = $(window).height();
+let setElementHeight = function () {
+    let height = $(window).height();
     $('.main-height').css('height', (height));
 };
 
@@ -31,19 +31,26 @@ $(document).ready(function () {
 });
 
 var swiper = new Swiper(".client-slider", {
-	slidesPerView: 3,
+	slidesPerView: 2,
 	loop: true,
 	spaceBetween: 20,
 	freeMode: true,
 	speed: 2000,
 	autoplay: {
 	  delay: 0,
-	//   disableOnInteraction: false
 	},
     roundLengths: true,
-    mousewheel: true,
-	/* pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	}, */
+    mousewheel: false,
+	breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+	},
 });
