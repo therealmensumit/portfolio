@@ -1,11 +1,11 @@
-let setElementHeight = function () {
+/* let setElementHeight = function () {
     let height = $(window).height();
     $('.main-height').css('height', (height));
 };
 
 $(window).on("resize", function () {
     setElementHeight();
-}).resize();
+}).resize(); */
 
 $(function(){
 	$(".typed").typed({
@@ -22,28 +22,26 @@ $(function(){
 	});
 });
 
-$(document).ready(function () {
-	$('#darkMode').click(function () {
-		$('body').toggleClass('dark-bg');
-		$(this).find('.bi-sun-fill').toggleClass('d-none');
-		$(this).find('.bi-moon-fill').toggleClass('d-none');
-	});
-});
-
-if(screen.width < 480) {
-    $('body').removeClass('overflow-hidden');
+document.getElementById("darkMode").onclick = ()=> {
+	document.getElementsByTagName("body")[0].classList.toggle("dark-bg");
+	document.querySelector(".bi-sun-fill").classList.toggle("d-none");
+	document.querySelector(".bi-moon-fill").classList.toggle("d-none");
 }
 
-var swiper = new Swiper(".client-slider", {
+if(screen.width < 768) {
+	document.getElementsByTagName("body")[0].classList.remove("overflow-hidden");
+}
+
+const swiper = new Swiper(".client-slider", {
 	slidesPerView: 2,
 	loop: true,
 	spaceBetween: 20,
-	freeMode: true,
+	freeMode: false,
 	speed: 2000,
 	autoplay: {
 	  delay: 0,
 	},
-    roundLengths: true,
+    roundLengths: false,
     mousewheel: false,
 	breakpoints: {
         640: {

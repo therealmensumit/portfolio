@@ -51,7 +51,7 @@ a:hover {
     border: transparent;
     width: 45px;
     height: 45px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     transition: all .4s;
 }
 
@@ -185,7 +185,7 @@ a:hover {
 }
 
 .left-side {
-    height: 480px;
+    height: 475px;
     border-radius: 0 4px 4px 0;
     overflow-y: auto;
     background-color: #fff;
@@ -219,6 +219,27 @@ a:hover {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+.download-cv a:hover {
+    color: #333;
+}
+
+.download-cv a::before {
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #78cc6d;
+    overflow: hidden;
+    transition: all 1s;    
+    white-space: nowrap;
+}
+
+.download-cv a:hover::before {
+    width: 100%;
 }
 
 .title {
@@ -373,7 +394,9 @@ a:hover .website-img img {
 .dark-bg .menu-bar.nav-pills li .nav-link,
 .dark-bg .btn.btn-outline-success,
 .dark-bg .title,
-.dark-bg a {
+.dark-bg a,
+.dark-bg .box-card h4,
+.dark-bg .download-cv a:hover{
     color: #fff;
 }
 
@@ -421,11 +444,7 @@ a:hover .website-img img {
     }
 }
 
-@media (max-width: 480px) {
-    /* body.overflow-hidden {
-        overflow: auto !important;
-    } */
-
+@media (max-width: 767px) {
     .border-line::after {
         width: 0;
     }
@@ -435,8 +454,9 @@ a:hover .website-img img {
     }
 
     .menu-bar {
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         width: 100%;
+        border-radius: 0;
         justify-content: space-between;
         opacity: 1;
         bottom: 0;
@@ -459,6 +479,7 @@ a:hover .website-img img {
 
     .left-side {
         height: auto;
+        border-radius: 12px;
     }
 
     .toggler {
@@ -466,7 +487,6 @@ a:hover .website-img img {
         left: unset;
         right: 20px;
         top: 20px;
-        box-shadow: 0 2px 4px #ccc;
     }
 
     .nav-link i {
