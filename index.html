@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github.min.css" />
     <link rel="stylesheet" href="css/custom-animation.css?v=2.0" />
     <link rel="stylesheet" href="css/style.css?v=2.1" />
 </head>
 
-<body class="gradient-color overflow-hidden">
+<body class="gradient-color overflow-hidden dark-bg">
     <div class="frame-gradient">
         <div></div>
         <div></div>
@@ -57,7 +58,8 @@
                                 </a>
                             </div>
                             <div class="text-center download-cv">
-                                <a href="files/Resume.pdf" target="_blank" class="position-relative text-uppercase" data-text="DOWNLOAD CV">download cv</a>
+                                <a href="files/Resume.pdf" target="_blank" class="position-relative text-uppercase"
+                                    data-text="DOWNLOAD CV">download cv</a>
                             </div>
                         </div>
                     </div>
@@ -150,9 +152,128 @@
                             </div>
                             <div class="tab-pane fade" id="pills-resume" role="tabpanel"
                                 aria-labelledby="pills-resume-tab" tabindex="0">
-                                <h2 class="title">Resume</h2>
-                                <embed class="my-file d-none d-md-block" src="files/Resume.pdf" type="application/pdf" width="100%" />
-                                <iframe class="my-file d-md-none" src="files/Resume.pdf" frameborder="0" width="100%"></iframe>
+                                <h2 class="title">My Skills</h2>
+                                <div class="row">
+                                    <div class="col-md-6 border-line py-3">
+                                        <div class="flex progress-wrapper d-none">
+                                            <input type="range" value="85" min="0" max="100" step="1">
+                                        </div>
+                                        <div class="flex container">
+                                            <div class="pie mx-auto text-center h-auto"
+                                                data-pie='{ "speed": 30, "percent": 85, "colorSlice": "#DD2C00", "colorCircle": "#f1f1f1", "round": true }'>
+                                            </div>
+                                            <div class="code">
+                                                <pre>
+                                                    <code class="language-json">data-pie='{ 
+                                                        "speed": 30,
+                                                        "percent": 85,
+                                                        "colorSlice": "#DD2C00",
+                                                        "colorCircle": "#f1f1f1",
+                                                        "round": true
+                                                    }'</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mb-0 mt-2">HTML</p>
+                                    </div>
+                                    <div class="col-md-6 border-line py-3">
+                                        <div class="flex container">
+                                            <div class="pie mx-auto text-center h-auto"
+                                                data-pie='{ "speed": 30, "percent": 80, "colorSlice": "#DD2C00", "colorCircle": "#f1f1f1", "round": true }'>
+                                            </div>
+                                            <div class="code">
+                                                <pre>
+                                                    <code class="language-json">data-pie='{ 
+                                                        "speed": 30,
+                                                        "percent": 80,
+                                                        "colorSlice": "#DD2C00",
+                                                        "colorCircle": "#f1f1f1",
+                                                        "round": true
+                                                    }'</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mb-0 mt-2">CSS</p>
+                                    </div>
+                                    <div class="col-md-6 border-line py-3">
+                                        <div class="flex container">
+                                            <div class="pie mx-auto text-center h-auto"
+                                                data-pie='{ "speed": 30, "percent": 70, "colorSlice": "#DD2C00", "colorCircle": "#f1f1f1", "round": true }'>
+                                            </div>
+                                            <div class="code">
+                                                <pre>
+                                                    <code class="language-json">data-pie='{ 
+                                                        "speed": 30,
+                                                        "percent": 70,
+                                                        "colorSlice": "#DD2C00",
+                                                        "colorCircle": "#f1f1f1",
+                                                        "round": true
+                                                    }'</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mb-0 mt-2">jQuery</p>
+                                    </div>
+                                    <div class="col-md-6 border-line py-3">
+                                        <div class="flex container">
+                                            <div class="pie mx-auto text-center h-auto"
+                                                data-pie='{ "speed": 30, "percent": 50, "colorSlice": "#DD2C00", "colorCircle": "#f1f1f1", "round": true }'>
+                                            </div>
+                                            <div class="code">
+                                                <pre>
+                                                    <code class="language-json">data-pie='{ 
+                                                        "speed": 30,
+                                                        "percent": 50,
+                                                        "colorSlice": "#DD2C00",
+                                                        "colorCircle": "#f1f1f1",
+                                                        "round": true
+                                                    }'</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mb-0 mt-2">JavaScript</p>
+                                    </div>
+                                    <div class="col-md-6 border-line py-3">
+                                        <div class="flex container">
+                                            <div class="pie mx-auto text-center h-auto"
+                                                data-pie='{ "speed": 30, "percent": 50, "colorSlice": "#DD2C00", "colorCircle": "#f1f1f1", "round": true }'>
+                                            </div>
+                                            <div class="code">
+                                                <pre>
+                                                    <code class="language-json">data-pie='{ 
+                                                        "speed": 30,
+                                                        "percent": 50,
+                                                        "colorSlice": "#DD2C00",
+                                                        "colorCircle": "#f1f1f1",
+                                                        "round": true
+                                                    }'</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mb-0 mt-2">PHP</p>
+                                    </div>
+                                    <div class="col-md-6 border-line py-3">
+                                        <div class="flex container">
+                                            <div class="pie mx-auto text-center h-auto"
+                                                data-pie='{ "speed": 30, "percent": 20, "colorSlice": "#DD2C00", "colorCircle": "#f1f1f1", "round": true }'>
+                                            </div>
+                                            <div class="code">
+                                                <pre>
+                                                    <code class="language-json">data-pie='{ 
+                                                        "speed": 30,
+                                                        "percent": 20,
+                                                        "colorSlice": "#DD2C00",
+                                                        "colorCircle": "#f1f1f1",
+                                                        "round": true
+                                                    }'</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mb-0 mt-2">React Js</p>
+                                    </div>
+                                </div>
+                                <h2 class="title mt-5">Resume</h2>
+                                <embed class="my-file" src="files/Resume.pdf" type="application/pdf" width="100%" />
                             </div>
                             <div class="tab-pane fade" id="pills-works" role="tabpanel"
                                 aria-labelledby="pills-works-tab" tabindex="0">
@@ -167,7 +288,8 @@
                                         <a href="images/authenticcave-about.jpg" data-fancybox="authentic"></a>
                                         <a href="images/authenticcave-services.jpg" data-fancybox="authentic"></a>
                                         <a href="images/authenticcave-contact.jpg" data-fancybox="authentic"></a>
-                                        <a href="images/authenticcave-free-consultation.jpg" data-fancybox="authentic"></a>
+                                        <a href="images/authenticcave-free-consultation.jpg"
+                                            data-fancybox="authentic"></a>
                                     </div>
                                     <div class="col-6 border-line py-3">
                                         <a href="images/jantaenterprise.jpg" data-fancybox="janta">
@@ -230,20 +352,21 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-floating mb-3">
-                                                    <textarea class="form-control h-50" id="floatingMessage"
-                                                        rows="3" placeholder="Your Message"></textarea>
+                                                    <textarea class="form-control h-50" id="floatingMessage" rows="3"
+                                                        placeholder="Your Message"></textarea>
                                                     <label for="floatingMessage" class="form-label">Your Message</label>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <button type="submit" class="btn btn-outline-success">Submit</button>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                     </form>
                                     <h2 class="title">Contact</h2>
                                     <div class="row mb-4">
                                         <div class="col-md-6 border-line py-3">
-                                            <div class="box-card d-flex align-items-center justify-content-md-between gap-3">
+                                            <div
+                                                class="box-card d-flex align-items-center justify-content-md-between gap-3">
                                                 <div class="contact-icon">
                                                     <i class="bi bi-telephone-fill mb-0"></i>
                                                     <!-- <p>Phone Number</p> -->
@@ -252,7 +375,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 border-line py-3">
-                                            <div class="box-card d-flex align-items-center justify-content-md-between gap-3">
+                                            <div
+                                                class="box-card d-flex align-items-center justify-content-md-between gap-3">
                                                 <div class="contact-icon">
                                                     <i class="bi bi-envelope-fill mb-0"></i>
                                                     <!-- <p>Email</p> -->
@@ -261,7 +385,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 border-line py-3">
-                                            <div class="box-card d-flex align-items-center justify-content-md-between gap-3">
+                                            <div
+                                                class="box-card d-flex align-items-center justify-content-md-between gap-3">
                                                 <div class="contact-icon">
                                                     <i class="bi bi-house-fill mb-0"></i>
                                                     <!-- <p>Address</p> -->
@@ -270,7 +395,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 border-line py-3">
-                                            <div class="box-card d-flex align-items-center justify-content-md-between gap-3">
+                                            <div
+                                                class="box-card d-flex align-items-center justify-content-md-between gap-3">
                                                 <div class="contact-icon">
                                                     <i class="mb-0">
                                                         <span>F</span>
@@ -326,8 +452,8 @@
     </ul>
 
     <button class="toggler" id="darkMode">
-        <i class="bi bi-moon-fill"></i>
-        <i class="bi bi-sun-fill d-none"></i>
+        <i class="bi bi-moon-fill d-none"></i>
+        <i class="bi bi-sun-fill"></i>
     </button>
 
     <script src="js/jquery-min.js"></script>
@@ -335,6 +461,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script src="js/custom.js?v=1.9"></script>
 </body>
 

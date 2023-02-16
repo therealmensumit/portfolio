@@ -234,7 +234,7 @@ a:hover {
     height: 100%;
     color: #78cc6d;
     overflow: hidden;
-    transition: all 1s;    
+    transition: all 1s;
     white-space: nowrap;
 }
 
@@ -350,6 +350,80 @@ a:hover {
     object-fit: contain;
 }
 
+
+.info {
+    /* border-bottom: 1px solid #e6e6e6; */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin: auto -15px 30px;
+}
+
+.info-code {
+    cursor: pointer;
+}
+
+.info-code:hover {
+    color: salmon;
+}
+
+.progress-wrapper {
+    max-width: 350px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+[type="range"] {
+    width: 200px;
+}
+
+.code {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 260px;
+    height: 0;
+    left: 0;
+    margin: auto;
+    line-height: 1.6;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.show-code .code {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    top: 45px;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+code {
+    height: calc(100% - 45px);
+    margin-top: -20px;
+}
+
+circle~text {
+    fill: #fff;
+    font-size: 1.2rem;
+}
+
+svg{
+    width: 150px;
+    height: 150px;
+}
+
+svg circle:nth-child(2) {
+    stroke: #78cc6d;
+}
+
 .box-card .contact-icon i {
     width: 40px;
     height: 40px;
@@ -396,7 +470,7 @@ a:hover .website-img img {
 .dark-bg .title,
 .dark-bg a,
 .dark-bg .box-card h4,
-.dark-bg .download-cv a:hover{
+.dark-bg .download-cv a:hover {
     color: #fff;
 }
 
