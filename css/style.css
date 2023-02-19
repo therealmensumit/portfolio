@@ -415,12 +415,12 @@ circle~text {
     font-size: 1.2rem;
 }
 
-svg{
+.pie svg{
     width: 150px;
     height: 150px;
 }
 
-svg circle:nth-child(2) {
+.pie svg circle:nth-child(2) {
     stroke: #78cc6d;
 }
 
